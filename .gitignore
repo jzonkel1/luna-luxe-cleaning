@@ -1,0 +1,7 @@
+# Keep the deployed site clean — exclude source/backup/unused files
+index.backup.html
+*.zip
+Luna Luxe Website/
+info.jpg
+info1.jpg
+temp.jpg
