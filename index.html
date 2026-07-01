@@ -554,6 +554,8 @@ footer ul a:hover{color:var(--gold-bright)}
 .foot-social a:hover{background:var(--gold-grad);color:#241a08;border-color:transparent;transform:translateY(-3px)}
 .foot-bottom{border-top:1px solid rgba(214,178,110,.12);padding-top:2rem;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;flex-wrap:wrap;gap:.6rem;color:var(--muted-2);font-size:.8rem}
 .foot-bottom .script{font-family:'Pinyon Script',cursive;font-size:1.3rem;color:var(--gold)}
+.foot-legal a{color:var(--muted);text-decoration:none;transition:color .3s}
+.foot-legal a:hover{color:var(--gold-bright)}
 
 /* sticky mobile call bar */
 .mobile-bar{display:none}
@@ -582,7 +584,12 @@ footer ul a:hover{color:var(--gold-bright)}
   .lb-close{top:.8rem;right:.9rem}
   .price-grid,.why-grid,.testi-grid,.steps,.addon-list{grid-template-columns:1fr}
   .svc-grid{grid-template-columns:1fr 1fr}
-  .field-row{grid-template-columns:1fr}
+  .field-row{grid-template-columns:1fr;gap:.75rem}
+  .form-card{padding:1.9rem 1.4rem}
+  .form-card h3{font-size:1.5rem;text-align:center}
+  .form-card .fc-sub{text-align:center;margin-bottom:1.4rem}
+  .field{margin-bottom:.75rem}
+  .field label{margin-bottom:.35rem}
   .hero{padding:8rem 0 3.5rem}
   .hero-cta{flex-direction:column;width:100%}
   .hero-cta .btn{width:100%}
@@ -824,6 +831,32 @@ footer ul a:hover{color:var(--gold-bright)}
   </div>
 </section>
 
+<!-- ============ ABOUT ============ -->
+<section class="section about" id="about">
+  <div class="wrap about-grid">
+    <div class="about-photo reveal">
+      <div class="frame"><img src="aboutus.jpg" alt="Luna, owner of Luna Luxe Cleaning Co." /></div>
+      <span class="sig">Luna</span>
+    </div>
+    <div class="about-copy reveal">
+      <span class="eyebrow">Meet The Owner</span>
+      <h2>Luxury cleaning, <span class="gold-text">with a personal touch</span></h2>
+      <p>
+        Luna Luxe began with a simple belief: <b>your space deserves the same care you'd give it yourself.</b>
+        As the owner and your professional cleaner, Luna personally handles every booking — no rotating crews, no cut corners, no surprises.
+      </p>
+      <p>Serving homes, offices and rentals across College Station and Bryan, she treats every space like her own and every client like family.</p>
+      <ul class="about-points">
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 13 4 4L19 7"/></svg> Owner-operated — you always know who's in your home</li>
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 13 4 4L19 7"/></svg> Fully insured for complete peace of mind</li>
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 13 4 4L19 7"/></svg> Customized to your space, schedule and preferences</li>
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 13 4 4L19 7"/></svg> Travels to surrounding areas for a small additional fee</li>
+      </ul>
+      <a href="tel:9792319848" class="btn btn-gold">Book With Luna</a>
+    </div>
+  </div>
+</section>
+
 <!-- ============ WHY US ============ -->
 <section class="section why" id="why">
   <div class="wrap">
@@ -853,32 +886,6 @@ footer ul a:hover{color:var(--gold-bright)}
         <h3>On Time, Every Time</h3>
         <p>Punctual, respectful and ready to work — your schedule is always honored.</p>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ ABOUT ============ -->
-<section class="section about" id="about">
-  <div class="wrap about-grid">
-    <div class="about-photo reveal">
-      <div class="frame"><img src="aboutus.jpg" alt="Luna, owner of Luna Luxe Cleaning Co." /></div>
-      <span class="sig">Luna</span>
-    </div>
-    <div class="about-copy reveal">
-      <span class="eyebrow">Meet The Owner</span>
-      <h2>Luxury cleaning, <span class="gold-text">with a personal touch</span></h2>
-      <p>
-        Luna Luxe began with a simple belief: <b>your space deserves the same care you'd give it yourself.</b>
-        As the owner and your professional cleaner, Luna personally handles every booking — no rotating crews, no cut corners, no surprises.
-      </p>
-      <p>Serving homes, offices and rentals across College Station and Bryan, she treats every space like her own and every client like family.</p>
-      <ul class="about-points">
-        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 13 4 4L19 7"/></svg> Owner-operated — you always know who's in your home</li>
-        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 13 4 4L19 7"/></svg> Fully insured for complete peace of mind</li>
-        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 13 4 4L19 7"/></svg> Customized to your space, schedule and preferences</li>
-        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 13 4 4L19 7"/></svg> Travels to surrounding areas for a small additional fee</li>
-      </ul>
-      <a href="tel:9792319848" class="btn btn-gold">Book With Luna</a>
     </div>
   </div>
 </section>
@@ -1122,6 +1129,7 @@ footer ul a:hover{color:var(--gold-bright)}
   </div>
   <div class="wrap foot-bottom">
     <span>© <span id="yr"></span> Luna Luxe Cleaning Co. · All rights reserved.</span>
+    <span class="foot-legal"><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></span>
     <span class="script">Clean spaces, happy places</span>
   </div>
 </footer>
